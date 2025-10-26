@@ -1,0 +1,436 @@
+body {
+  background-color: lightgray;
+}
+
+/* Header styling */
+header {
+  width: 100%;
+  background-color: #FFFFFF;   /* replace with Figma header bg color */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;          /* replace with Figma spacing */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* if design has shadow */
+}
+
+header .logo {
+  font-size: 2rem;             /* adjust per Figma */
+  color: #333333;              /* logo color from Figma */
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;                   /* gap from Figma design */
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: #555555;              /* nav link color from Figma */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;             /* size from Figma */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header nav ul li a:hover {
+  color: #000000;              /* hover color from Figma */
+}
+
+/* Hero / first section styling */
+section.hero {
+  width: 100%;
+  min-height: 600px;           /* height from Figma */
+  background: url('../images/hero-banner.jpg') center/cover no-repeat; /* image path and cover */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  color: #FFFFFF;              /* text color for hero */
+  text-align: center;
+}
+
+section.hero h1 {
+  font-family: 'Spin Cycle OT', sans-serif; /* custom font from design */
+  font-size: 3.5rem;           /* replace per Figma typography */
+  margin-bottom: 20px;
+}
+
+section.hero p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25rem;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+/* ===============================
+   QUOTE SECTION
+   =============================== */
+
+section.quote {
+  background-color: #F9F9F9; /* Replace with Figma background color */
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section.quote blockquote {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+  font-size: 1.5rem; /* Match Figma typography */
+  line-height: 1.6;
+  color: #333333; /* Replace with Figma color */
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+section.quote img {
+  width: 80px; /* Adjust per Figma image size */
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+section.quote .author {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #111111; /* Adjust per Figma */
+  margin-bottom: 5px;
+}
+
+section.quote .role {
+  font-size: 0.95rem;
+  color: #777777; /* Replace with Figma color */
+}
+
+/* ===============================
+   VIDEOS LIST SECTION
+   =============================== */
+
+section.videos {
+  background-color: #FFFFFF; /* or match Figma color */
+  padding: 80px 60px;
+}
+
+section.videos h2 {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.2rem;
+  color: #111111; /* from Figma */
+  margin-bottom: 60px;
+}
+
+/* Container for the video cards */
+.videos .videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+/* Each video card */
+.videos .video-card {
+  background-color: #F9F9F9;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+}
+
+.videos .video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Thumbnail */
+.videos .video-card img.thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text content inside the card */
+.videos .video-info {
+  padding: 20px;
+}
+
+.videos .video-info h3 {
+  font-size: 1.2rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.videos .video-info p {
+  font-size: 0.95rem;
+  color: #666666;
+  line-height: 1.5;
+}
+
+/* Author */
+.videos .author {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.videos .author img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.videos .author span {
+  font-size: 0.9rem;
+  color: #444444;
+}
+
+/* ===============================
+   MEMBERSHIP SECTION
+   =============================== */
+
+section.membership {
+  background-color: #F5F7FA; /* Replace with Figma background color */
+  padding: 80px 60px;
+  text-align: center;
+}
+
+section.membership h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.2rem;
+  color: #111111; /* Figma color */
+  margin-bottom: 50px;
+}
+
+.membership .plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Each membership card */
+.membership .plan {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 30px 20px;
+  max-width: 280px;
+  flex: 1 1 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.membership .plan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.membership .plan h3 {
+  font-family: 'Spin Cycle OT', sans-serif;
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.membership .plan p.price {
+  font-size: 1.2rem;
+  color: #007BFF; /* highlight price */
+  margin-bottom: 15px;
+}
+
+.membership .plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.membership .plan ul li {
+  font-size: 0.95rem;
+  color: #555555;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.membership .plan ul li::before {
+  content: "✔"; /* simple checkmark */
+  position: absolute;
+  left: 0;
+  color: #28a745; /* checkmark color */
+}
+
+.membership .plan button {
+  background-color: #007BFF; /* Figma button color */
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.membership .plan button:hover {
+  background-color: #0056b3; /* darker on hover */
+}
+
+/* ===============================
+   FAQ SECTION
+   =============================== */
+
+section.faq {
+  background-color: #FFFFFF; /* Replace with Figma background */
+  padding: 80px 60px;
+}
+
+section.faq h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.2rem;
+  color: #111111; /* Figma text color */
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Container for FAQ items */
+.faq .faq-items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Each FAQ item */
+.faq .faq-item {
+  border-bottom: 1px solid #E0E0E0; /* Figma separator */
+  padding: 20px 0;
+}
+
+.faq .faq-item button.question {
+  width: 100%;
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1rem;
+  color: #333333;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq .faq-item button.question:focus {
+  outline: none;
+}
+
+.faq .faq-item p.answer {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.6;
+  margin-top: 10px;
+  display: none; /* Initially hidden if using accordion */
+}
+
+/* Optional: Toggle active FAQ */
+.faq .faq-item.active p.answer {
+  display: block;
+}
+
+/* Optional: Add an arrow icon for toggle */
+.faq .faq-item button.question::after {
+  content: "▼";
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.faq .faq-item.active button.question::after {
+  transform: rotate(180deg);
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+footer {
+  background-color: #1E1E2F; /* Figma footer color */
+  color: #FFFFFF;
+  padding: 60px 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer sections (links, about, etc.) */
+footer .footer-section {
+  flex: 1 1 200px;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #CCCCCC; /* Figma link color */
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #FFFFFF;
+}
+
+/* Social icons */
+footer .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+footer .social-icons a {
+  color: #CCCCCC;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #FFFFFF;
+}
+
+/* Footer bottom copyright */
+footer .footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #AAAAAA;
+}
