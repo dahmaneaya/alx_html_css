@@ -36,3 +36,68 @@ header, footer {
   text-align: center;
   padding: 1em;
 }
+
+/* Header styling */
+header {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 1rem;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #ffcb05;
+}
+
+/* Logo styling (you can make it even larger if you like) */
+.logo {
+  font-size: 1.8rem;
+}
+
+/* Article content customization */
+article {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  line-height: 1.6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Aside styling */
+aside {
+  background: #f5f7fa;
+  border-left: 2px solid #ddd;
+  padding: 20px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #1e1e2f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+article h2 {
+  color: #004aad;
+}
+
+article ul li {
+  margin-bottom: 0.5em;
+}
